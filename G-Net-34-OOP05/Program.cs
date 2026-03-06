@@ -1,5 +1,6 @@
 ﻿using G_Net_34_OOP05.Part01.UsingQ02;
 using G_Net_34_OOP05.Part01.UsingQ04;
+using G_Net_34_OOP05.Part02;
 using System;
 using System.Diagnostics.Metrics;
 using System.IO;
@@ -10,6 +11,10 @@ namespace G_Net_34_OOP05
 {
     internal class Program
     {
+        public static void k(Ticket t)
+        {
+            t.PrintDetails();
+        }
         static void Main(string[] args)
         {
             #region Part01
@@ -107,7 +112,7 @@ namespace G_Net_34_OOP05
             #endregion
             #endregion
 
-
+            
         }
     }
 }
