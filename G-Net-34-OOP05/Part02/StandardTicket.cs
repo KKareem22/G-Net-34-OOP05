@@ -15,7 +15,7 @@ namespace G_Net_34_OOP05.Part02
         }
         public override string ToString()
         {
-            return $"[Ticket #{TicketID}] {MovieName} | Standard | Seat:{SeatNumber} |Price :{Price} EGP | After Tax:{PriceAfterTax}";
+            return $"[Ticket #{TicketID}] {MovieName} | {this.GetType().Name.Replace("Ticket","")} | Seat:{SeatNumber} |Price :{Price} EGP | After Tax:{PriceAfterTax}";
         }
     }
 }

@@ -11,10 +11,7 @@ namespace G_Net_34_OOP05
 {
     internal class Program
     {
-        public static void k(Ticket t)
-        {
-            t.PrintDetails();
-        }
+        
         static void Main(string[] args)
         {
             #region Part01
@@ -89,7 +86,7 @@ namespace G_Net_34_OOP05
             #region Q04
             /*Look at the following code and determine the output. Explain why?*/
             ////Go to Folder UsingQ04 in Folder Part01
-           
+
 
             //Employee e01 = new Employee()
             //{
@@ -112,7 +109,48 @@ namespace G_Net_34_OOP05
             #endregion
             #endregion
 
+            #region Part02
+            //Ticket[] _ticket = new Ticket[]
+            //{
+            //    new StandardTicket("Inception",80m,"A5"),
+            //    new VIPTicket("Avengers",200m,true),
+            //    new IMAXTicket("Dune",130m,true)
+            //};
+            ////booking tickets
+            //_ticket[0].BookTicket();
+            //_ticket[1].BookTicket();
+            //_ticket[2].BookTicket();
             
+            //Cinema myCinema=new Cinema();
+            //myCinema.OpenCinema();
+            //foreach(var c in _ticket)
+            //{
+            //    myCinema.AddTicket(c);
+            //}
+
+            //Console.WriteLine();
+            //myCinema.PrintAllTickets();
+            ///////////////////////Clone
+            //Console.WriteLine("=======Clone Test =======");
+            //VIPTicket vipOrginal = (VIPTicket)_ticket[1];
+            //VIPTicket CloneTicket=vipOrginal.Clone();
+            //CloneTicket.MovieName = "Interstellar";
+            //Console.Write("Orginal : ");
+            //vipOrginal.PrintDetails();
+            //Console.Write("Clone : ");
+            //CloneTicket.PrintDetails();
+
+            //Console.WriteLine();
+            //Console.WriteLine("=======Afetr Cancellation =======");
+            //_ticket[0].CancleBookTicket();
+            //_ticket[0].PrintDetails();
+            //Console.WriteLine("\n");
+            //BookingHelper.PrintAnything(_ticket);
+            //Console.WriteLine("\n");
+            //myCinema.CloseCinema();
+            //Console.ReadLine();
+
+            #endregion
         }
     }
 }

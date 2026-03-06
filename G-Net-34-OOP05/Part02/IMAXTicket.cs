@@ -16,7 +16,7 @@ namespace G_Net_34_OOP05.Part02
         public override decimal PriceAfterTax => Is3D ? base.PriceAfterTax + 30m : base.PriceAfterTax;
         public override string ToString()
         {
-            return $"[Ticket #{TicketID}] {MovieName} | IMAX | Lounge Access : IMAX 3D :{(Is3D ? "Yes" : "No")} | After Tax:{PriceAfterTax}";
+            return $"[Ticket #{TicketID}] {MovieName} | {this.GetType().Name.Replace("Ticket", "")} | IMAX 3D :{(Is3D ? "Yes" : "No")} | After Tax:{PriceAfterTax}";
         }
     }
 }

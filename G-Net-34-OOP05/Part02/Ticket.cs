@@ -51,11 +51,11 @@ namespace G_Net_34_OOP05.Part02
         public void BookTicket()
         {
             if (IsBooked)
-                Console.WriteLine($"Ticket #{TicketID} is already booked! ");
+                return;
             else
             {
                 IsBooked = true;
-                Console.WriteLine($"Ticket #{TicketID} booked successfully.");
+
             }
         }
 
@@ -63,19 +63,19 @@ namespace G_Net_34_OOP05.Part02
         {
             if(!IsBooked)
             {
-                Console.WriteLine($"Ticket #{TicketID} is not booked yet !");
+                return;
             }
             else
             {
                 IsBooked = false;
-                Console.WriteLine($"Ticket #{TicketID} canclled successfully.");
+                
             }
         }
 
         public void PrintDetails()
         {
             string status = IsBooked ? "Yes" : "No";
-            Console.WriteLine($"{ToString()} |Booked :{status}");
+            Console.WriteLine($"{ToString()} |Booked :{status}\n");
         }
     }
 }
